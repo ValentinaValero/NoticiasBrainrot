@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    /* Topo com links globais */
+    *{
+    margin: 0;
+    padding: 0;
+   
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2); /* Sombra suave embaixo */
+    padding: 5vh;
+    margin-bottom: 5%;
+}
+
+.logo{
+    width: 25vh;
+}
+
+.perfil{
+    width: 7vh;
+    position: absolute;
+    right: 70px; 
+    top: 7vh;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Sombra suave no perfil */
+    border-radius: 50%; /* Se for uma imagem circular */
+}
+
+h1, h2{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 160%;
+}
+
+    /* Conteúdo */
+    .conteudo, .texto{
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+
+    .texto, .texto h2{
+      margin-top: 3%;
+    }
+
+    .conteudo h2 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .conteudo p {
+      font-size: 15px;
+      color: #555;
+    }
+
+    footer{
+      background-color: aliceblue;
+       box-shadow: 0 -15px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      margin-top: 7%;
+      padding: 2%;
+      font-family: 'Press Start 2P', cursive;
+    }
+

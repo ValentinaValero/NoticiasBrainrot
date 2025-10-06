@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+
+<body>
+    <div class="alinhamento">
+        <form class="bloco">
+            <div class="espacamento">
+                <img src="./img/logo.png" alt="oi">
+                <p>já tem uma conta? <br><br><a href="login.html">faça login</a></p>
+            </div>
+
+            <div class="espacamento">
+                <input placeholder="Nome Completo" type="text" name="" id="">
+                <input placeholder="Telefone" type="text" name="" id="">
+                <input placeholder="Email" type="text" name="" id="">
+                <input placeholder="Senha" type="text" name="" id="">
+            </div>
+            <a href="pgInicial.html" class="botao-link">Acessar</a>
+
+
+
+
+        </form>
+    </div>
+</body>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    
+    
+}
+
+body {
+    overflow: hidden; 
+    background-image: url(https://i.pinimg.com/736x/39/5e/ed/395eed2b0c523ec38f700af784ef2cb4.jpg);
+    font-family: 'Press Start 2P', cursive;
+    
+}
+
+.alinhamento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.bloco{
+    width: 35%;
+    height: 90vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 5%;
+    border: 4px solid black;
+}
+
+.bloco img{
+    width: 220px;
+    margin-bottom: 15px;
+}
+
+.bloco p{
+    font-size: 65%;
+}
+
+
+.botao-link{
+   
+    width: 60vh;
+    height: 10vh;
+    border: 2px solid black;
+    background-image: url(https://cdn.shopify.com/s/files/1/0403/5801/9230/files/glitch-effect-for-video-editing_ee1e587c-c3f0-4b56-8adb-63be455eeabb_1250x.jpg?v=1705103155);
+    color: white;
+    font-size: 125%;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    text-decoration: none; 
+    line-height: 10vh; 
+}
+
+.botao-link:hover{
+    transform: rotate(2deg);
+}
+
+.espacamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+.espacamento input{
+    padding: 2vh;
+    width: 56vh;
+    
+    border: 2px solid black;
+}
+</style>
+
+</html>
