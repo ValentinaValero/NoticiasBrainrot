@@ -1,45 +1,42 @@
+/*importação de fonte*/
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
 }
 
-.geral {
-    display: flex;
-}
 
-header {
+/*navbar*/
+header{
     display: flex;
     justify-content: center;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
-    /* Sombra suave embaixo */
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2); /* Sombra suave embaixo */
     padding: 5vh;
     margin-bottom: 6%;
 
 }
 
+/*espaçamento desnecessario*/
 
-.logo {
+.logo{
     width: 25vh;
 }
 
-.perfil {
+.perfil{
     width: 7vh;
     position: absolute;
-    right: 70px;
+    right: 70px; 
     top: 7vh;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    /* Sombra suave no perfil */
-    border-radius: 50%;
-    /* Se for uma imagem circular */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Sombra suave no perfil */
+    border-radius: 50%; /* Se for uma imagem circular */
 }
+/*navbar*/
 
 
-
-/* Container */
+/* Container/ configuração da div de perfil */ 
 .container {
     display: flex;
     flex-direction: column;
@@ -63,7 +60,7 @@ header {
 }
 
 .avatar {
-    width: 60px;
+    width: 70px;
     height: 60px;
     border-radius: 50%;
     background-color: #a4d7b1;
@@ -126,13 +123,16 @@ header {
 
 .data-item p {
     color: #666;
-}
+} /*configuração da div de perfil*/
 
-footer {
+/* roda pé*/
+footer{
     background-color: aliceblue;
-    box-shadow: 0 -15px 20px rgba(0, 0, 0, 0.2);
+     box-shadow: 0 -15px 20px rgba(0, 0, 0, 0.2);
     text-align: center;
     margin-top: 7%;
     padding: 2%;
     font-family: 'Press Start 2P', cursive;
-}
+  }
+
+  
