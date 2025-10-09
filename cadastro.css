@@ -1,29 +1,28 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'Press Start 2P', cursive;
-    
-    
+
+
 }
 
 body {
-    overflow: hidden; 
+    overflow: hidden;
     background-image: url(https://i.pinimg.com/736x/39/5e/ed/395eed2b0c523ec38f700af784ef2cb4.jpg);
     font-family: 'Press Start 2P', cursive;
-    
+
 }
 
-.alinhamento{
+.alinhamento {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; 
+    height: 100vh;
 }
 
-.bloco{
+.bloco {
     width: 35%;
     height: 90vh;
     background-color: rgb(255, 255, 255);
@@ -36,18 +35,18 @@ body {
     border: 4px solid black;
 }
 
-.bloco img{
+.bloco img {
     width: 220px;
     margin-bottom: 15px;
 }
 
-.bloco p{
+.bloco p {
     font-size: 65%;
 }
 
 
-.botao-link{
-   
+.botao-link {
+
     width: 60vh;
     height: 10vh;
     border: 2px solid black;
@@ -56,24 +55,24 @@ body {
     font-size: 125%;
     cursor: pointer;
     transition: transform 0.5s ease;
-    text-decoration: none; 
-    line-height: 10vh; 
+    text-decoration: none;
+    line-height: 10vh;
 }
 
-.botao-link:hover{
+.botao-link:hover {
     transform: rotate(2deg);
 }
 
-.espacamento{
+.espacamento {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2vh;
 }
 
-.espacamento input{
+.espacamento input {
     padding: 2vh;
     width: 56vh;
-    
+
     border: 2px solid black;
 }

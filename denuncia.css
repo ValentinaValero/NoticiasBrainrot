@@ -1,0 +1,100 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+
+ * {
+     font-family: 'Inter', sans-serif;
+ }
+
+ body {
+
+     background: url(https://i.pinimg.com/736x/39/5e/ed/395eed2b0c523ec38f700af784ef2cb4.jpg);
+     margin: 0;
+     padding: 0;
+     color: #222;
+ }
+
+
+ main {
+     max-width: 500px;
+     margin: 60px auto;
+     background: white;
+     padding: 40px;
+     border-radius: 16px;
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+ }
+
+ h1 {
+     text-align: center;
+     color: #333;
+     margin-bottom: 25px;
+     line-height: 1.6;
+ }
+
+ form {
+     display: flex;
+     flex-direction: column;
+     gap: 16px;
+ }
+
+ label {
+     font-weight: 600;
+     font-size: 14px;
+ }
+
+ input,
+ textarea,
+ select {
+     padding: 12px;
+     border: 1px solid #ccc;
+     border-radius: 8px;
+     font-size: 15px;
+     outline: none;
+     transition: border-color 0.2s;
+ }
+
+ input:focus,
+ textarea:focus,
+ select:focus {
+     border-color: #ffb300;
+ }
+
+ textarea {
+     resize: vertical;
+     min-height: 80px;
+ }
+
+ button {
+     background: url(https://cdn.shopify.com/s/files/1/0403/5801/9230/files/glitch-effect-for-video-editing_ee1e587c-c3f0-4b56-8adb-63be455eeabb_1250x.jpg?v=1705103155);
+     color: white;
+     font-weight: 600;
+     font-size: 25px;
+     border: none;
+     margin-top: 5%;
+     border-radius: 10px;
+     padding: 20px;
+     cursor: pointer;
+     transition: transform 0.5s ease;
+ }
+
+ button:hover {
+     transform: rotate(2deg);
+ }
+
+
+ .alinhar {
+     margin-top: 6%;
+     display: flex;
+     justify-content: center;
+ }
+
+ a {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     text-decoration: none;
+     background-color: #222;
+     border-radius: 50px;
+     width: 10vh;
+     height: 10vh;
+
+ }

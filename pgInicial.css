@@ -1,73 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Press Start 2P', cursive;
+
 }
 
-header{
+header {
     display: flex;
     justify-content: center;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2); /* Sombra suave embaixo */
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    /* Sombra suave embaixo */
     padding: 5vh;
 }
 
-.logo{
+.logo {
     width: 25vh;
 }
 
-.perfil{
+.perfil {
     width: 7vh;
     position: absolute;
-    right: 70px; 
+    right: 70px;
     top: 7vh;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Sombra suave no perfil */
-    border-radius: 50%; /* Se for uma imagem circular */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    /* Sombra suave no perfil */
+    border-radius: 50%;
+    /* Se for uma imagem circular */
 }
 
-.noticia{
+.noticia {
+    font-family: 'Inter', sans-serif;
     margin-top: 10vh;
     padding: 4%;
     width: 80%;
     height: 30vh;
-      border: 4px solid rgb(43, 43, 43);
-   flex-direction: column;
+    border: 4px solid rgb(43, 43, 43);
+    flex-direction: column;
     display: flex;
     background-color: rgb(255, 255, 255);
     font-size: 70%;
 }
 
-.espaco{
+.espaco {
     display: flex;
     gap: 5%;
     margin-right: 6%;
     margin-left: 3%;
 }
 
-.noticia img{
+.noticia img {
     width: 200px;
     height: 200px;
-     border: 4px solid rgb(43, 43, 43);
+    border: 4px solid rgb(43, 43, 43);
 }
 
-.noticia p{
+.noticia p {
     font-family: 'Inter', sans-serif;
     font-size: 160%;
     color: rgb(77, 77, 77);
     text-align: justify;
 }
 
-.corpo{
+.noticia h1 {
+    font-size: 250%;
+}
+
+.corpo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.noticia a{
+.noticia a {
     margin-top: 4vh;
     padding: 2%;
     display: flex;
@@ -77,31 +85,33 @@ header{
     background: url(https://cdn.shopify.com/s/files/1/0403/5801/9230/files/glitch-effect-for-video-editing_ee1e587c-c3f0-4b56-8adb-63be455eeabb_1250x.jpg?v=1705103155);
     color: white;
     transition: transform 0.5s ease;
+    font-size: 150%;
+    text-decoration: none;
 }
 
-.noticia a:hover{
+.noticia a:hover {
     transform: rotate(2deg);
 }
 
 
- footer{
-      background-color: aliceblue;
-       box-shadow: 0 -15px 20px rgba(0, 0, 0, 0.2);
-      text-align: center;
-      margin-top: 7%;
-      padding: 2%;
-    }
+footer {
+    font-family: 'Press Start 2P', cursive;
+    background-color: aliceblue;
+    box-shadow: 0 -15px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 7%;
+    padding: 2%;
+}
 
-    .banner{
-        display: flex;
-        justify-content: center;
-    }
+.banner {
+    display: flex;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
 
-    .banner img{
-        
-        margin-top: 2%;
-        margin-bottom: 3%;
-        width: 88%;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-
-    }
+.banner a img {
+    display: block;
+    margin: 0 auto;
+    width: 88%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
