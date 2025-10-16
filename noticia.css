@@ -111,3 +111,41 @@ footer {
 
 
 }
+
+.sucesso-denuncia {
+  left: 40%;
+  bottom: 2.5%;
+  position: fixed;
+  background: #4caf50;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  border-radius: 8px;
+  animation: slideUpFade 5s ease;
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.726);
+  font-family: 'Inter', sans-serif;
+}
+
+@keyframes slideUpFade {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}

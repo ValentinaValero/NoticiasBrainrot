@@ -9,6 +9,14 @@
 </head>
 
 <body>
+
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="./img/Bug ‐ Feito com o Clipchamp.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+        </video>
+    </div>
+
     <div class="alinhamento">
         <form class="bloco">
             <div class="espacamento">
@@ -17,16 +25,26 @@
             </div>
 
             <div class="espacamento">
-                <input placeholder="Email" type="text" name="" id="">
-                <input placeholder="Senha" type="text" name="" id="">
+                <input placeholder="Email" type="email" id="email">
+                <input placeholder="Senha" type="password" id="senha">
             </div>
-            <a href="pgInicial.html" class="botao-link">Acessar</a>
-
-
-
-
+            <button type="button" class="botao-link">Acessar</button>
         </form>
-    </div>
+        </div>
+    
+        
+        <script>
+            document.querySelector('.botao-link').onclick = function () {
+                var email = document.getElementById('email').value.trim();
+                var senha = document.getElementById('senha').value.trim();
+                if (email && senha) {
+                    window.location.href = 'pgInicial.html';
+                } else {
+                    alert('Preencha todos os campos!');
+                }
+            };
+        </script>
+    
 </body>
 
 </html>

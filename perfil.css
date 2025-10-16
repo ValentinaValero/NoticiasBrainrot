@@ -2,11 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
 
+/*espaçamento desnecessario*/
 *{
     margin: 0;
     padding: 0;
+
 }
 
+
+
+.geral {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+}
 
 /*navbar*/
 header{
@@ -19,7 +27,7 @@ header{
 
 }
 
-/*espaçamento desnecessario*/
+
 
 .logo{
     width: 25vh;
@@ -47,7 +55,7 @@ header{
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 50px;
-    font-family: 'Inter', sans-serif;
+
 }
 
 /* Profile Header */
@@ -125,8 +133,28 @@ header{
     color: #666;
 } /*configuração da div de perfil*/
 
-/* roda pé*/
-footer{
+
+.btn-sair {
+    font-family: 'Inter', sans-serif;
+    margin-top: 5%;
+    font-size: 135%;
+    display: flex;
+    width: 20%;
+    border-radius: 20px;
+    padding: 1.5%;
+    justify-content: center;
+    justify-self: center;
+    background-color: rgb(175, 0, 0);
+    color: white;
+    text-decoration: none;
+}
+
+.btn-sair:hover {
+    background-color: rgb(114, 0, 0);
+
+}
+
+footer {
     background-color: aliceblue;
      box-shadow: 0 -15px 20px rgba(0, 0, 0, 0.2);
     text-align: center;

@@ -11,12 +11,17 @@
 </head>
 
 <body>
-
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="./img/Bug ‐ Feito com o Clipchamp.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+        </video>
+    </div>
 
     <main>
         <h1>Formulário de Denúncia</h1>
-        <form>
 
+        <form>
             <label for="motivo">Motivo da denúncia:</label>
             <select id="motivo" name="motivo" required>
                 <option value="">Selecione...</option>
@@ -29,18 +34,28 @@
             <label for="descricao">Descrição:</label>
             <textarea id="descricao" name="descricao" placeholder="Explique o motivo da denúncia" required></textarea>
 
-            <label for="email">E-mail (opcional):</label>
-            <input type="email" id="email" name="email" placeholder="Seu e-mail, se desejar resposta">
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" name="email" placeholder="Seu e-mail">
 
-            <button type="submit">Enviar Denúncia</button>
+            <button type="button" class="botao-link">Enviar Denúncia</button>
         </form>
 
-        <div class="alinhar">
-            <a href="noticia.html"><i class="fa-solid fa-arrow-left"></i></a>
-        </div>
     </main>
 
 
+    <script>
+        document.querySelector('.botao-link').onclick = function () {
+            var motivo = document.getElementById('motivo').value.trim();
+            var descricao = document.getElementById('descricao').value.trim();
+            var email = document.getElementById('email').value.trim();
+            if (motivo && descricao && email) {
+                localStorage.setItem('denunciaEnviada', 'true');
+                window.location.href = 'noticia.html';
+            } else {
+                alert('Preencha todos os campos obrigatórios!');
+            }
+        };
+    </script>
 </body>
 
 </html>

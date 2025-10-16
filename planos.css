@@ -1,5 +1,6 @@
   * {
       margin: 0;
+
   }
 
   .logo {
@@ -33,24 +34,31 @@
 
 
   .planos {
-      margin-top: 20px;
-
       display: flex;
+      justify-content: center;
+      margin-top: 5%;
+      gap: 5%;
   }
 
   .container {
       display: flex;
       flex-direction: column;
-      gap: 10%;
-      width: 300px;
+      gap: 6%;
+      width: 250px;
       height: 310px;
-      margin: 50px auto;
+      padding: 2%;
       background: rgb(233, 233, 233);
       padding: 30px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
+      transition: 1s;
 
   }
+
+  .container:hover {
+      transform: scale(1.03);
+  }
+
 
   button {
       display: block;
@@ -72,6 +80,7 @@
   p {
       font-family: inter;
       text-align: left;
+      font-size: 96%;
   }
 
   .indicado {

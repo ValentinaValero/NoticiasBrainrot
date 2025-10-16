@@ -7,9 +7,22 @@
 
 }
 
-body {
-    background: url(https://i.pinimg.com/736x/39/5e/ed/395eed2b0c523ec38f700af784ef2cb4.jpg);
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    /* envia o vídeo para trás do conteúdo */
+}
 
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* mantém o vídeo preenchendo a tela */
 }
 
 .container {
